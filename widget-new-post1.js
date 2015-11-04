@@ -28,14 +28,14 @@ function rp(json) {
 		monthnames[2] = "Feb";
 		monthnames[3] = "Mar";
 		monthnames[4] = "Apr";
-		monthnames[5] = "May";
+		monthnames[5] = "Mei";
 		monthnames[6] = "Jun";
 		monthnames[7] = "Jul";
-		monthnames[8] = "Aug";
+		monthnames[8] = "Agu";
 		monthnames[9] = "Sep";
-		monthnames[10] = "Oct";
+		monthnames[10] = "Okt";
 		monthnames[11] = "Nov";
-		monthnames[12] = "Dec";
+		monthnames[12] = "Des";
 
 		if ("content" in entry) {
 			var postcontent = entry.content.$t;
@@ -43,11 +43,11 @@ function rp(json) {
 			var postcontent = entry.summary.$t;
 		} else 
 			var postcontent = "";
-			var re = /<\S[^>]*>/g; 
-			postcontent = postcontent.replace(re, "");
+			/*var re = /<\S[^>]*>/g; 
+			postcontent = postcontent.replace(re, "");*/
 			document.write(posttitle);
 	
-			if (showpostdate == true) document.write(' - ' + monthnames[parseInt(cdmonth,10)] + ' ' + cdday);
+			if (showpostdate == true) document.write(' - ' + cdday + ' ' + monthnames[parseInt(cdmonth,10)]);
 	
 		if (showpostsummary == true) {
 			if (postcontent.length < numchars) {
