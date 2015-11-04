@@ -43,8 +43,8 @@ function rp(json) {
 			var postcontent = entry.summary.$t;
 		} else 
 			var postcontent = "";
-			/*var re = /<\S[^>]*>/g; 
-			postcontent = postcontent.replace(re, "");*/
+			var re = /<\S[^>]*>/g; 
+			postcontent = postcontent.replace(re, "");
 			document.write(posttitle);
 	
 			if (showpostdate == true) document.write(' - ' + cdday + ' ' + monthnames[parseInt(cdmonth,10)]);
