@@ -56,7 +56,7 @@ function rp(json) {
 				postcontent = postcontent.substring(0, numchars);
 				var quoteEnd = postcontent.lastIndexOf(" ");
 				postcontent = postcontent.substring(0,quoteEnd);
-				document.write(postcontent + '...' + readmorelink);
+				document.write(' - ' + postcontent + '...' + readmorelink);
 			}
 		}
 		document.write('</li>');
