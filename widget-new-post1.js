@@ -51,7 +51,7 @@ function rp(json) {
 	
 		if (showpostsummary == true) {
 			if (postcontent.length < numchars) {
-				document.write(postcontent);
+				document.write(' - ' + postcontent);
 			} else {
 				postcontent = postcontent.substring(0, numchars);
 				var quoteEnd = postcontent.lastIndexOf(" ");
